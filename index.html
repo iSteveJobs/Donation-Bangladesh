@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="">
+      <nav class="bg-[#F9F7F3] lg:px-70 px-5">
+        <div class="navbar">
+          <div class="navbar-start">
+            <button id="btn-blog" class="btn bg-[#B4F461] text-black">
+              Blog
+            </button>
+          </div>
+          <div class="navbar-center">
+            <img class="pr-4" src="assets/logo.png" alt="" />
+            <p class="text-black font-semibold">Donate Bangladesh</p>
+          </div>
+          <div class="navbar-end">
+            <div class="">
+              <div class="flex">
+                <div class="">
+                  <img src="assets/coin.png" alt="" />
+                </div>
+                <div id="available-balance" class="ml-2 mr-2">5500</div>
+                <div class="">BDT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="mt-20">
+        <div class="text-center">
+          <button id="btn-donation" class="btn bg-[#B4F461] mr-2">
+            Donation
+          </button>
+          <button id="btn-history" class="btn bg-white">History</button>
+        </div>
+
+        <!-- donation button work start -->
+        <!-- Noakhali Flood start-->
+        <div id="hidden-donation">
+          <div class="hero mt-15">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="assets/noakhali.png"
+                class="rounded-lg shadow-2xl mr-5"
+              />
+              <div>
+                <div class="flex mb-7">
+                  <div class="">
+                    <img src="assets/coin.png" alt="" />
+                  </div>
+                  <div id="noakhali-available-balance" class="ml-2 mr-2">0</div>
+                  <div class="">BDT</div>
+                </div>
+                <h1 id="title-flood-noakhali" class="text-xl font-bold">
+                  Donate for Flood at Noakhali, Bangladesh
+                </h1>
+                <p class="py-7 max-w-lg">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+                <input
+                  class="border-0 text-sm p-4 text-purple-600 font-bold bg-base-200"
+                  type="text"
+                  name=""
+                  id="noakhali-donation-amount"
+                  placeholder="Write Donation Amount"
+                />
+                <br />
+                <br />
+
+                <!--start: Donate button with Modal -->
+                <button
+                  id="btn-donation-now"
+                  class="btn bg-[#B4F461] px-37"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Donate Now
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box bg-green-100">
+                    <h3 class="text-5xl text-center font-bold text-green-800">
+                      Congrates!
+                    </h3>
+                    <img class="mx-auto my-5" src="/assets/coin.png" alt="" />
+                    <h1 class="text-center my-5 text-green-800">
+                      You Have Donated for Humankind
+                    </h1>
+                    <h1 class="text-center text-lg font-bold text-green-800">
+                      Successfully
+                    </h1>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <button class="btn bg-gray-400 text-pink-700">
+                          Close
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+                <!--end: Donate button with Modal -->
+              </div>
+            </div>
+          </div>
+          <!-- Noakhali Flood End -->
+
+          <!-- Feni Flood start -->
+          <div class="hero mt-15">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="assets/feni.png" class="rounded-lg shadow-2xl mr-5" />
+              <div>
+                <div class="flex mb-7">
+                  <div class="">
+                    <img src="assets/coin.png" alt="" />
+                  </div>
+                  <div id="feni-available-balance" class="ml-2 mr-2">0</div>
+                  <div class="">BDT</div>
+                </div>
+                <h1 id="title-flood-feni" class="text-xl font-bold">
+                  Donate for Flood Relief in Feni,Bangladesh
+                </h1>
+                <p class="py-7 max-w-lg">
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
+                </p>
+                <input
+                  class="border-0 text-sm p-4 text-purple-600 font-bold bg-base-200"
+                  type="text"
+                  name=""
+                  id="feni-donation-amount"
+                  placeholder="Write Donation Amount"
+                />
+                <br />
+                <br />
+                <!--start: Donate button with Modal -->
+                <button
+                  id="btn-donation-now-feni"
+                  class="btn bg-[#B4F461] px-37"
+                  onclick="my_modal_5.showModal()"
+                >
+                  Donate Now
+                </button>
+                <dialog id="my_modal_5" class="modal">
+                  <div class="modal-box bg-green-100">
+                    <h3 class="text-5xl text-center font-bold text-green-800">
+                      Congrates!
+                    </h3>
+                    <img class="mx-auto my-5" src="/assets/coin.png" alt="" />
+                    <h1 class="text-center my-5 text-green-800">
+                      You Have Donated for Humankind
+                    </h1>
+                    <h1 class="text-center text-lg font-bold text-green-800">
+                      Successfully
+                    </h1>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <button class="btn bg-gray-400 text-pink-700">
+                          Close
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+                <!--end: Donate button with Modal -->
+              </div>
+            </div>
+          </div>
+          <!-- Feni Flood end -->
+        </div>
+
+        <!-- donation button work end -->
+
+        <!-- History Button Work start -->
+
+        <div id="hidden-history" class="hidden mt-10">
+          <div id="history-container"></div>
+        </div>
+
+        <!-- History Button Work end -->
+      </section>
+    </main>
+
+    <script src="js/libraryFunction.js"></script>
+    <script src="js/noakhaliFlood.js"></script>
+    <script src="js/feniFlood.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/features.js"></script>
+  </body>
+</html>

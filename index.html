@@ -187,7 +187,69 @@
             </div>
           </div>
           <!-- Feni Flood end -->
+           <!-- Quota start -->
+        <div class="hero mt-15">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="assets/quota-protest.png" class="rounded-lg shadow-2xl mr-5" />
+            <div>
+              <div class="flex mb-7">
+                <div class="">
+                  <img src="assets/coin.png" alt="" />
+                </div>
+                <div id="quota-available-balance" class="ml-2 mr-2">0</div>
+                <div class="">BDT</div>
+              </div>
+              <h1 id="title-quota" class="text-xl font-bold">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="py-7 max-w-lg">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              </p>
+              <input
+                class="border-0 text-sm p-4 text-purple-600 font-bold bg-base-200"
+                type="text"
+                name=""
+                id="quota-donation-amount"
+                placeholder="Write Donation Amount"
+              />
+              <br />
+              <br />
+              <!--start: Donate button with Modal -->
+              <button
+                id="btn-donation-now-quota"
+                class="btn bg-[#B4F461] px-37"
+                onclick="my_modal_2.showModal()"
+              >
+                Donate Now
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box bg-green-100">
+                  <h3 class="text-5xl text-center font-bold text-green-800">
+                    Congrates!
+                  </h3>
+                  <img class="mx-auto my-5" src="/assets/coin.png" alt="" />
+                  <h1 class="text-center my-5 text-green-800">
+                    You Have Donated for Humankind
+                  </h1>
+                  <h1 class="text-center text-lg font-bold text-green-800">
+                    Successfully
+                  </h1>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn bg-gray-400 text-pink-700">
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <!--end: Donate button with Modal -->
+            </div>
+          </div>
         </div>
+        <!-- Quota end -->
+        </div>
+      </div>
 
         <!-- donation button work end -->
 
@@ -203,6 +265,7 @@
 
     <script src="js/libraryFunction.js"></script>
     <script src="js/noakhaliFlood.js"></script>
+    <script src="js/quota.js"></script>
     <script src="js/feniFlood.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/features.js"></script>
